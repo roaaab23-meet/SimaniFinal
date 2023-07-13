@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231998305344",
+    "project_id": "simanimvp",
+    "storage_bucket": "simanimvp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231998305344:android:0cf46b0011e0f43d7d9ba5",
+        "android_client_info": {
+          "package_name": "com.example.simanimvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231998305344-m2tqlvddv4lb01r76h7u9k08mqgtpjln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6jHG1wFEne-CEMvU1gptO4tYVJDPjtcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231998305344-m2tqlvddv4lb01r76h7u9k08mqgtpjln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
