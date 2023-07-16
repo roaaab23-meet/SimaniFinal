@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SimaniMVP</string>
+	<!-- iphone_14___sign_in_page strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="save_ek1_string">save</string>
+	<string name="arabic_ek1_string">Arabic</string>
+	<string name="hebrew_ek1_string">Hebrew</string>
 </resources>
