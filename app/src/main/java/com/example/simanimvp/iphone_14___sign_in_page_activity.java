@@ -1,6 +1,6 @@
+package com.example.simanimvp;
 
-	 
-	/*
+/*
 	 *	This content is generated from the API File Info.
 	 *	(Alt+Shift+Ctrl+I).
 	 *
@@ -13,9 +13,7 @@
 	 *	@generator 	Export Kit v1.3.figma
 	 *
 	 */
-	
 
-package exportkit.figma;
 
 import android.app.Activity;
 import android.os.Bundle;
