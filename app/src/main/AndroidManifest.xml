@@ -12,17 +12,20 @@
         android:theme="@style/Theme.SimaniMVP"
         tools:targetApi="31">
         <activity
-            android:name=".Signin"
+            android:name=".ArbHomePage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".HebHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".PickLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".Signin"
+            android:exported="false" />
     </application>
 
 </manifest>
