@@ -12,19 +12,7 @@
         android:theme="@style/Theme.SimaniMVP"
         tools:targetApi="31">
         <activity
-            android:name=".ArbHomePage"
-            android:exported="false" />
-        <activity
-            android:name=".HebHomePage"
-            android:exported="false" />
-        <activity
             android:name=".PickLanguage"
-            android:exported="false" />
-        <activity
-            android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".Signin"
             android:exported="false" />
     </application>
 

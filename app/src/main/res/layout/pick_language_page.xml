@@ -6,8 +6,8 @@
 	 *	(Alt+Shift+Ctrl+I).
 	 *
 	 *	@desc 		
-	 *	@file 		iphone_14___sign_in_page
-	 *	@date 		Sunday 16th of July 2023 01:36:14 PM
+	 *	@file 		pick_language_page
+	 *	@date 		Sunday 16th of July 2023 04:18:55 PM
 	 *	@title 		Page 1
 	 *	@author 	
 	 *	@keywords 	
@@ -15,7 +15,7 @@
 	 *
 	 */
 	-->
-	<ScrollView android:id="@+id/iphone_14___sign_in_page" 
+	<ScrollView android:id="@+id/pick_language_page" 
 		android:layout_width="wrap_content" 
 		android:layout_height="match_parent" >
 
@@ -25,15 +25,15 @@
 
 
 
-			<RelativeLayout android:id="@+id/page_iphone_14___sign_in_page_ek1"
+			<RelativeLayout android:id="@+id/page_pick_language_page_ek1"
 				android:layout_marginTop="0dp"
 				android:layout_marginStart="0dp"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				>
 
-				<View   android:id="@+id/_bg__iphone_14___sign_in_page_ek2"
-					android:background="@drawable/_bg__iphone_14___sign_in_page_ek2_shape"
+				<View   android:id="@+id/_bg__pick_language_page_ek2"
+					android:background="@drawable/_bg__pick_language_page_ek2_shape"
 					 android:layout_marginStart="0dp"
 					android:layout_marginTop="0dp"
 					android:layout_width="390dp"
@@ -63,7 +63,6 @@
 						android:layout_height="42dp" />
 
 					<TextView android:id="@+id/save_ek1"
-						android:fontFamily="Lato"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
 						android:textSize="30sp"
@@ -101,7 +100,6 @@
 						android:layout_height="54dp" />
 
 					<TextView android:id="@+id/arabic_ek1"
-						android:fontFamily="Lato"
 						android:textSize="20sp"
 						android:textColor="@color/save_ek1_color"
 						android:layout_marginLeft="36dp"
@@ -129,7 +127,6 @@
 						android:layout_height="54dp" />
 
 					<TextView android:id="@+id/hebrew_ek1"
-						android:fontFamily="Lato"
 						android:layout_gravity="center_horizontal|center"
 						android:gravity="center"
 						android:textSize="20sp"
@@ -142,6 +139,19 @@
 						 />
 
 				</RelativeLayout>
+
+				<TextView android:id="@+id/pick_a_language"
+					android:textStyle="bold"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="35sp"
+					android:textColor="@color/pick_a_language_color"
+					android:layout_marginLeft="72dp"
+					android:layout_marginTop="130dp"
+					android:layout_width="272dp"
+					android:layout_height="66.5dp"
+					android:text="@string/pick_a_language_string"
+					 />
 
 			</RelativeLayout>
 		</RelativeLayout>
