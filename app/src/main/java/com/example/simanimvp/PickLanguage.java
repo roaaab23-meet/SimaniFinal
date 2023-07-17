@@ -10,6 +10,7 @@ import android.widget.Button;
 public class PickLanguage extends AppCompatActivity {
     Button HebBtn;
     Button ArbBtn;
+    // Loai testing stuff.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
