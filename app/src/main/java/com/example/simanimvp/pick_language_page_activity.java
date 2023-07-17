@@ -17,15 +17,14 @@
 
 package com.example.simanimvp;
 
-import android.app.Activity;
-import android.os.Bundle;
-
-
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.example.simanimvp.R;
+	import android.annotation.SuppressLint;
+	import android.app.Activity;
+	import android.content.Intent;
+	import android.os.Bundle;
+	import android.view.View;
+	import android.widget.Button;
+	import android.widget.ImageView;
+	import android.widget.TextView;
 
 	public class pick_language_page_activity extends Activity {
 
@@ -35,12 +34,13 @@ import com.example.simanimvp.R;
 	private View rectangle_87;
 	private TextView save_ek1;
 	private ImageView logo;
-	private View rectangle_94;
+	private Button rectangle_94;
 	private TextView arabic_ek1;
-	private View rectangle_94_ek1;
+	private Button rectangle_94_ek1;
 	private TextView hebrew_ek1;
 	private TextView pick_a_language;
 
+	@SuppressLint("WrongViewCast")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
@@ -53,14 +53,29 @@ import com.example.simanimvp.R;
 		rectangle_87 = (View) findViewById(R.id.rectangle_87);
 		save_ek1 = (TextView) findViewById(R.id.save_ek1);
 		logo = (ImageView) findViewById(R.id.logo);
-		rectangle_94 = (View) findViewById(R.id.rectangle_94);
+		rectangle_94 = findViewById(R.id.rectangle_94);
 		arabic_ek1 = (TextView) findViewById(R.id.arabic_ek1);
-		rectangle_94_ek1 = (View) findViewById(R.id.rectangle_94_ek1);
+		rectangle_94_ek1 =findViewById(R.id.rectangle_94_ek1);
 		hebrew_ek1 = (TextView) findViewById(R.id.hebrew_ek1);
 		pick_a_language = (TextView) findViewById(R.id.pick_a_language);
 	
 		
 		//custom code goes here
+		rectangle_94.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent i=new Intent(getApplicationContext(), HebHomePage.class );
+				startActivity(i);
+			}
+		});
+
+		rectangle_94_ek1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent i=new Intent(getApplicationContext(), arbhomepage_activity.class );
+				startActivity(i);
+			}
+		});
 	
 	}
 }

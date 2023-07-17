@@ -14,7 +14,7 @@ public class PickLanguage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pick_language);
+        setContentView(R.layout.pick_language_page);
 
         HebBtn=findViewById(R.HebBtn);
         ArbBtn=findViewById(R.ArbBtn);

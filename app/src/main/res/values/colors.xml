@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- pick_language_page colors -->
+	<!-- iphone_14___course_search_page colors -->
 
 	<color name="colorPrimary">#008577</color>
 	<color name="colorPrimaryDark">#00574B</color>
@@ -13,8 +13,8 @@
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
 
-	<color name="_bg__pick_language_page_ek2_color">#FFFFFF</color>
-	<color name="rectangle_87_color">#FC9AA4</color>
-	<color name="save_ek1_color">#85285F</color>
-	<color name="pick_a_language_color">#87235D</color>
+	<color name="_bg__iphone_14___course_search_page_ek2_color">#FEFBE9</color>
+	<color name="_______color">#9E5A7F</color>
+	<color name="rectangle_84_color">#C8E3D4</color>
+	<color name="_______________________img___color">#FFFFFF</color>
 </resources>
