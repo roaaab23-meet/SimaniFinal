@@ -3,6 +3,7 @@ package com.example.simanimvpshaitry;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,6 +31,8 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
     private boolean word2Clicked = false;
     private boolean word3Clicked = false;
     private boolean word4Clicked = false;
+    private int wordImageDuoCount=0;
+    private int goToNewPage=0;//goes to a new page when goToNewPage=4
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,96 +51,96 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         gifMake(video3);
         gifMake(video4);
 
-        video1.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener clickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                video1Clicked = true;
+                if (v == video1) {
+                    video1Clicked = true;
+                    wordImageDuoCount++;
+                } else if (v == video2) {
+                    video2Clicked = true;
+                    wordImageDuoCount++;
+                }else if (v == video3) {
+                    video3Clicked = true;
+                    wordImageDuoCount++;
+                }else if (v == video4) {
+                    video4Clicked = true;
+                    wordImageDuoCount++;
+                }else if (v == word1) {
+                    word1Clicked = true;
+                    wordImageDuoCount++;
+                }
+                else if (v == word2) {
+                    word2Clicked = true;
+                    wordImageDuoCount++;
+                }
+                else if (v == word3) {
+                    word3Clicked = true;
+                    wordImageDuoCount++;
+                }else if (v == word4) {
+                    word4Clicked = true;
+                    wordImageDuoCount++;
+                }
                 checkClickOrder();
             }
-        });
-        video2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                video2Clicked = true;
-                checkClickOrder();
-            }
-        });
-        video3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                video3Clicked = true;
-                checkClickOrder();
-            }
-        });
-        video4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                video4Clicked = true;
-                checkClickOrder();
-            }
-        });
-        word1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                word1Clicked = true;
-                checkClickOrder();
-            }
-        });
-        word2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                word2Clicked = true;
-                checkClickOrder();
-            }
-        });
-        word3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                word3Clicked = true;
-                checkClickOrder();
-            }
-        });
-        word4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                word4Clicked = true;
-                checkClickOrder();
-            }
-        });
+        };
+        video1.setOnClickListener(clickListener);
+        word1.setOnClickListener(clickListener);
+        video2.setOnClickListener(clickListener);
+        word2.setOnClickListener(clickListener);
+        video3.setOnClickListener(clickListener);
+        word3.setOnClickListener(clickListener);
+        video4.setOnClickListener(clickListener);
+        word4.setOnClickListener(clickListener);
     }
-    
+
     private void checkClickOrder() {
-        if (video1Clicked && word1Clicked) {
-            // Both video1 and word2 were clicked in the desired order
-            // Start a new activity or perform any desired action here
-            startActivity(new Intent(this, ArabicLevels.class));
-            // Reset the click order tracking for future use if needed
-            video1Clicked = false;
-            word1Clicked = false;
-        }
-        if (video2Clicked && word3Clicked) {
-            // Both video1 and word2 were clicked in the desired order
-            // Start a new activity or perform any desired action here
-            startActivity(new Intent(this, ArabicLevels.class));
-            // Reset the click order tracking for future use if needed
-            video2Clicked = false;
-            word3Clicked = false;
-        }
-        if (video3Clicked && word2Clicked) {
-            // Both video1 and word2 were clicked in the desired order
-            // Start a new activity or perform any desired action here
-            startActivity(new Intent(this, ArabicLevels.class));
-            // Reset the click order tracking for future use if needed
-            video3Clicked = false;
-            word2Clicked = false;
-        }
-        if (video4Clicked && word4Clicked) {
-            // Both video1 and word2 were clicked in the desired order
-            // Start a new activity or perform any desired action here
-            startActivity(new Intent(this, ArabicLevels.class));
-            // Reset the click order tracking for future use if needed
-            video4Clicked = false;
-            word4Clicked = false;
+        if(wordImageDuoCount==2) {
+            if (video1Clicked && word1Clicked) {
+                goToNewPage++;
+                wordImageDuoCount = 0;
+                video1Clicked = false;
+                word1Clicked = false;
+                video1.setVisibility(View.GONE);
+                word1.setVisibility(View.GONE);
+                checkIfGoNewPage();
+
+            } else if (video2Clicked && word3Clicked ) {
+                goToNewPage++;
+                wordImageDuoCount = 0;
+                video2Clicked = false;
+                word3Clicked = false;
+                video2.setVisibility(View.GONE);
+                word3.setVisibility(View.GONE);
+                checkIfGoNewPage();
+            } else if (video3Clicked && word2Clicked ) {
+                goToNewPage++;
+                wordImageDuoCount = 0;
+                video3Clicked = false;
+                word2Clicked = false;
+                video3.setVisibility(View.GONE);
+                word2.setVisibility(View.GONE);
+                checkIfGoNewPage();
+            } else if (video4Clicked && word4Clicked ) {
+                goToNewPage++;
+                wordImageDuoCount = 0;
+                video4Clicked = false;
+                word4Clicked = false;
+                video4.setVisibility(View.GONE);
+                word4.setVisibility(View.GONE);
+                checkIfGoNewPage();
+            }
+            else{
+                wordImageDuoCount = 0;
+                video1Clicked = false;
+                video2Clicked = false;
+                video3Clicked = false;
+                video4Clicked = false;
+                word1Clicked = false;
+                word2Clicked = false;
+                word3Clicked = false;
+                word4Clicked = false;
+            }
         }
     }
 
@@ -152,7 +155,33 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
             e.printStackTrace();
         }
     }
+    public void checkIfGoNewPage()
+    {
+        if(goToNewPage==4) {
+            goToNewPage=0;
+            startActivity(new Intent(ConnectTheWordsCourse.this, ArabicLevels.class));
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    visible();
+                    // Code to be executed after the delay
+                    // Insert the desired actions or code here
+                }
+            }, 1000); // 1000 milliseconds = 1 second
 
+        }
+    }
+    public void visible()
+    {
+        video1.setVisibility(View.VISIBLE);
+        video2.setVisibility(View.VISIBLE);
+        video3.setVisibility(View.VISIBLE);
+        video4.setVisibility(View.VISIBLE);
+        word1.setVisibility(View.VISIBLE);
+        word2.setVisibility(View.VISIBLE);
+        word3.setVisibility(View.VISIBLE);
+        word4.setVisibility(View.VISIBLE);
+    }
     @Override
     public void onClick(View view) {
 
