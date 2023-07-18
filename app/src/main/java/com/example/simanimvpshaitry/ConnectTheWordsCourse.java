@@ -105,6 +105,7 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
             }
         });
     }
+    
     private void checkClickOrder() {
         if (video1Clicked && word1Clicked) {
             // Both video1 and word2 were clicked in the desired order
