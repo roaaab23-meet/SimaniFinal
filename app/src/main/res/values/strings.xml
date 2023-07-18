@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- iphone_14___course_search_page strings -->
-
-	<string name="app_name">Page 1</string>
-	<string name="ek_img_content">ExportKit Image</string>
-	<string name="_______string"></string>
-	<string name="_______________________img___string">   \ </string>
-	<string name="____________string"> </string>
-	<string name="______string"></string>
+    <string name="app_name">SimaniMvpShaiTry</string>
 </resources>

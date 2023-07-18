@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseTheRightWord"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/backbutton"
+        android:contentDescription="Go To HebrewLevels"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="בחר/ בחרי את הפירוש הנכון של המילה המופיע" />
+
+    <ImageView
+        android:id="@+id/schoolgif"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:src="@raw/school" />
+
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:text="אנגלית" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:text="ספרייה" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:text="מטבח" />
+
+    <Button
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:text="בית ספר" />
+
+    <Button
+        android:id="@+id/submitAnswerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הגש" />
+
+
+
+</LinearLayout>

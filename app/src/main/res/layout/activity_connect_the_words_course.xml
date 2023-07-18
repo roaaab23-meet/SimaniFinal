@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ConnectTheWordsCourse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/arrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:visibility="gone" />
+
+    <!-- Left side with EditText fields -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/word1"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:text="אנגלית"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/word2"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:text="עברית"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/word3"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:text="שלום"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/word4"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:text="בית ספר"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <!-- Right side with videos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/video1"
+            android:layout_width="wrap_content"
+            android:layout_height="137dp"
+            android:src="@raw/english"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Video"/>
+
+        <ImageView
+            android:id="@+id/video2"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:src="@raw/hello"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Video"/>
+
+        <ImageView
+            android:id="@+id/video3"
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:src="@raw/hebrew"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Video"/>
+
+        <ImageView
+            android:id="@+id/video4"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:src="@raw/school"
+            android:background="@drawable/selector_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Video"/>
+
+        <Button
+            android:id="@+id/submitAnswerButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="הגש" />
+
+        <!-- Add more VideoView elements as needed -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
