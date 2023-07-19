@@ -2,6 +2,7 @@ package com.example.simanimvpshaitry;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -101,8 +102,8 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
                 wordImageDuoCount = 0;
                 video1Clicked = false;
                 word1Clicked = false;
-                video1.setVisibility(View.GONE);
-                word1.setVisibility(View.GONE);
+                video1.setBackgroundResource(R.drawable.frameafterfinished);
+                word1.setBackgroundResource(R.drawable.frameafterfinished);
                 checkIfGoNewPage();
 
             } else if (video2Clicked && word3Clicked ) {
@@ -110,24 +111,24 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
                 wordImageDuoCount = 0;
                 video2Clicked = false;
                 word3Clicked = false;
-                video2.setVisibility(View.GONE);
-                word3.setVisibility(View.GONE);
+                video2.setBackgroundResource(R.drawable.frameafterfinished);
+                word3.setBackgroundResource(R.drawable.frameafterfinished);
                 checkIfGoNewPage();
             } else if (video3Clicked && word2Clicked ) {
                 goToNewPage++;
                 wordImageDuoCount = 0;
                 video3Clicked = false;
                 word2Clicked = false;
-                video3.setVisibility(View.GONE);
-                word2.setVisibility(View.GONE);
+                video3.setBackgroundResource(R.drawable.frameafterfinished);
+                word2.setBackgroundResource(R.drawable.frameafterfinished);
                 checkIfGoNewPage();
             } else if (video4Clicked && word4Clicked ) {
                 goToNewPage++;
                 wordImageDuoCount = 0;
                 video4Clicked = false;
                 word4Clicked = false;
-                video4.setVisibility(View.GONE);
-                word4.setVisibility(View.GONE);
+                video4.setBackgroundResource(R.drawable.frameafterfinished);
+                word4.setBackgroundResource(R.drawable.frameafterfinished);
                 checkIfGoNewPage();
             }
             else{
@@ -160,10 +161,11 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         if(goToNewPage==4) {
             goToNewPage=0;
             startActivity(new Intent(ConnectTheWordsCourse.this, ArabicLevels.class));
+
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    visible();
+                    emptyFrame();
                     // Code to be executed after the delay
                     // Insert the desired actions or code here
                 }
@@ -171,16 +173,16 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
 
         }
     }
-    public void visible()
+    public void emptyFrame()
     {
-        video1.setVisibility(View.VISIBLE);
-        video2.setVisibility(View.VISIBLE);
-        video3.setVisibility(View.VISIBLE);
-        video4.setVisibility(View.VISIBLE);
-        word1.setVisibility(View.VISIBLE);
-        word2.setVisibility(View.VISIBLE);
-        word3.setVisibility(View.VISIBLE);
-        word4.setVisibility(View.VISIBLE);
+        video1.setBackgroundColor(Color.WHITE);
+        word1.setBackgroundColor(Color.WHITE);
+        video2.setBackgroundColor(Color.WHITE);
+        word2.setBackgroundColor(Color.WHITE);
+        video3.setBackgroundColor(Color.WHITE);
+        word3.setBackgroundColor(Color.WHITE);
+        video4.setBackgroundColor(Color.WHITE);
+        word4.setBackgroundColor(Color.WHITE);
     }
     @Override
     public void onClick(View view) {
