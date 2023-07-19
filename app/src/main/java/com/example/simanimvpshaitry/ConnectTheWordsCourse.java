@@ -47,10 +47,10 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         word2=findViewById(R.id.word2);
         word3=findViewById(R.id.word3);
         word4=findViewById(R.id.word4);
-        gifMake(video1);
-        gifMake(video2);
-        gifMake(video3);
-        gifMake(video4);
+        gifMake1();
+        gifMake2();
+        gifMake3();
+        gifMake4();
 
         View.OnClickListener clickListener = new View.OnClickListener() {
             @Override
@@ -145,22 +145,56 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         }
     }
 
-    public void gifMake(ImageView gif){
+    public void gifMake1(){
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.school);
-            gif.setImageDrawable(gifDrawable);
+            gifDrawable = new GifDrawable(getResources(), R.raw.please);
+            video1.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    public void gifMake2(){
+        //making the gif move.
+        GifDrawable gifDrawable;
+        try {
+            gifDrawable = new GifDrawable(getResources(), R.raw.va);
+            video2.setImageDrawable(gifDrawable);
+            gifDrawable.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void gifMake3(){
+        //making the gif move.
+        GifDrawable gifDrawable;
+        try {
+            gifDrawable = new GifDrawable(getResources(), R.raw.nice);
+            video3.setImageDrawable(gifDrawable);
+            gifDrawable.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void gifMake4(){
+        //making the gif move.
+        GifDrawable gifDrawable;
+        try {
+            gifDrawable = new GifDrawable(getResources(), R.raw.sorry);
+            video4.setImageDrawable(gifDrawable);
+            gifDrawable.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void checkIfGoNewPage()
     {
         if(goToNewPage==4) {
             goToNewPage=0;
-            startActivity(new Intent(ConnectTheWordsCourse.this, ArabicLevels.class));
+            startActivity(new Intent(ConnectTheWordsCourse.this, FinishedLevel.class));
 
             new Handler().postDelayed(new Runnable() {
                 @Override

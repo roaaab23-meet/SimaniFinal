@@ -34,7 +34,7 @@ public class WriteTheSentenceInHebrew extends AppCompatActivity implements View.
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.whatsyourname);
+            gifDrawable = new GifDrawable(getResources(), R.raw.hello);
             video.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
@@ -46,7 +46,7 @@ public class WriteTheSentenceInHebrew extends AppCompatActivity implements View.
     public void onClick(View view) {
         if(view==submitAnswerButton){
             String enteredAnswer = answer.getText().toString();
-            if(!enteredAnswer.equals("מה השם שלך?")&&!enteredAnswer.equals("מה השם שלך ")&&!enteredAnswer.equals("מה השם שלך")){
+            if(!enteredAnswer.equals("שלום!")&&!enteredAnswer.equals("שלום")&&!enteredAnswer.equals("שלום ")){
                 answer.setText("");
             }
             else {

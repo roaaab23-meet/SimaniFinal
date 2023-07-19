@@ -25,7 +25,7 @@
         android:id="@+id/schoolgif"
         android:layout_width="match_parent"
         android:layout_height="199dp"
-        android:src="@raw/school" />
+        android:src="@raw/you" />
 
 
     <Button
@@ -34,7 +34,7 @@
         android:layout_height="95dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="אנגלית" />
+        android:text="בית ספר" />
 
     <Button
         android:id="@+id/option2"
@@ -42,7 +42,7 @@
         android:layout_height="106dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="ספרייה" />
+        android:text="מטבח" />
 
     <Button
         android:id="@+id/option3"
@@ -50,7 +50,7 @@
         android:layout_height="98dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="מטבח" />
+        android:text="אתה" />
 
     <Button
         android:id="@+id/option4"
@@ -58,7 +58,7 @@
         android:layout_height="105dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="בית ספר" />
+        android:text="תודה" />
 
     <Button
         android:id="@+id/submitAnswerButton"

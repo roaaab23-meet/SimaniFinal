@@ -1,5 +1,6 @@
 package com.example.simanimvpshaitry;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +13,12 @@ public class HebrewLevels extends AppCompatActivity implements View.OnClickListe
     private TextView hello;
     private Button circleButton1;
     private Button circleButton2;
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        hello=findViewById(R.id.hello);
+        //hello=findViewById(R.id.hello);
         circleButton1=findViewById(R.id.circleButton1);
         circleButton2=findViewById(R.id.circleButton2);
         circleButton1.setOnClickListener(this);
