@@ -12,6 +12,12 @@
         android:theme="@style/Theme.SimaniMvpShaiTry"
         tools:targetApi="31">
         <activity
+            android:name=".arabic_homepage2"
+            android:exported="false" />
+        <activity
+            android:name=".arabic_homepage"
+            android:exported="false" />
+        <activity
             android:name=".FinishedLevel"
             android:exported="false" />
         <activity
