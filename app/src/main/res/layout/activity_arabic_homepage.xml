@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arabic_homepage">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="193dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text=" שלום ניב"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalStartGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toTopOf="@+id/arabichomepagebg"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageButton
+        android:id="@+id/arabichomepagebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arabichomepagebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalStartGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalMiddleGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalSecondMiddletGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalEndGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+    <!-- Horizontal guideline to center the buttons vertically -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- Vertical guidelines to position the buttons horizontally -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- Level 2 -->
+    <ImageButton
+        android:id="@+id/level2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink2"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/verticalCenterGuideline"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalStartGuideline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Level 1 -->
+
+    <ImageButton
+        android:id="@+id/level1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink1"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        app:layout_constraintHorizontal_bias="0.551"
+        android:onClick="startthis"
+        app:layout_constraintStart_toEndOf="@id/verticalCenterGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalStartGuideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level3-->
+    <ImageButton
+        android:id="@+id/level3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink3"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@id/verticalCenterGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalMiddleGuideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level4-->
+    <ImageButton
+        android:id="@+id/level4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink4"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/verticalCenterGuideline"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalMiddleGuideline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level5-->
+    <ImageButton
+        android:id="@+id/level5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink5"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@id/verticalCenterGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalCenterGuideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level6-->
+    <ImageButton
+        android:id="@+id/level6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink6"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/verticalCenterGuideline"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalCenterGuideline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level7-->
+    <ImageButton
+        android:id="@+id/level7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink7"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@id/verticalCenterGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalSecondMiddletGuideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--level8-->
+    <ImageButton
+        android:id="@+id/level8"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/pink8"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/verticalCenterGuideline"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalSecondMiddletGuideline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/catagory"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/catagory"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/verticalCenterGuideline"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalEndGuideline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/community"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/communication_page"
+        app:layout_constraintBottom_toBottomOf="@id/verticalCenterGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@id/verticalCenterGuideline"
+        app:layout_constraintTop_toTopOf="@id/horizontalEndGuideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+    <!-- Other buttons (Level 3 to Level 9) -->
+    <!-- Add them using the same approach as Level 1 and Level 2 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

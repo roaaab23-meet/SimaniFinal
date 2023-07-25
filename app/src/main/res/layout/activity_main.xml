@@ -1,23 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
 
-    <Button
-        android:id="@+id/btnHebrew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hebrew"
-        android:onClick="selectLanguage" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnArabic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Arabic"
-        android:onClick="selectLanguage" />
+        <View
+            android:id="@+id/community"
+            android:layout_width="110dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="557dp"
+            android:background="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="243dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="469dp"
+            android:gravity="center"
+            android:text="Pick a language"
+            android:textColor="#85285F"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hebrewbtn"
+            android:layout_width="293dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="427dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="222dp"
+            android:contentDescription="icon_character"
+            android:src="@drawable/hebrew"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arabicbtn"
+            android:layout_width="295dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="304dp"
+            android:contentDescription="icon_character"
+            android:src="@drawable/arabic"
+            android:onClick="callSecondActivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>
