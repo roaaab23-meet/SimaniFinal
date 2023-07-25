@@ -12,6 +12,24 @@
         android:theme="@style/Theme.SimaniMvpShaiTry"
         tools:targetApi="31">
         <activity
+            android:name=".learnTheWord5"
+            android:exported="false" />
+        <activity
+            android:name=".learnTheWord4"
+            android:exported="false" />
+        <activity
+            android:name=".learnTheWord3"
+            android:exported="false" />
+        <activity
+            android:name=".learnTheWord2"
+            android:exported="false" />
+        <activity
+            android:name=".learnTheWord1"
+            android:exported="false" />
+        <activity
+            android:name=".learnTheWord"
+            android:exported="false" />
+        <activity
             android:name=".FinishedLevel"
             android:exported="false" />
         <activity

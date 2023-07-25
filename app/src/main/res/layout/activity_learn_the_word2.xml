@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteTheSentenceInHebrew"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Go To HebrewLevels"
+        app:srcCompat="@drawable/backbutton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="בבקשה" />
+
+    <ImageView
+        android:id="@+id/pleaseGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@raw/please" />
+
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="לעמוד הבא"
+        android:background="@drawable/buttondesign1"/>
+
+
+</LinearLayout>

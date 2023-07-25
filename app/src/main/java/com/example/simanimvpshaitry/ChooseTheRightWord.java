@@ -85,7 +85,7 @@ public class ChooseTheRightWord extends AppCompatActivity implements View.OnClic
         }
         if(view==submitAnswerButton){
             if(answer.equals("4")){
-                Intent i = new Intent(this, ConnectTheWordsCourse.class);
+                Intent i = new Intent(this, learnTheWord2.class);
                 startActivity(i);
             }
         }

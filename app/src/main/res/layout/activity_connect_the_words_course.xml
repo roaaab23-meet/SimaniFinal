@@ -18,38 +18,42 @@
         <TextView
             android:id="@+id/word1"
             android:layout_width="match_parent"
-            android:layout_height="112dp"
-            android:text="בבקשה"
+            android:layout_height="131dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:gravity="center"
+            android:text="בבקשה" />
 
         <TextView
             android:id="@+id/word2"
             android:layout_width="match_parent"
-            android:layout_height="127dp"
-            android:text="נחמד, נהנה"
+            android:layout_height="141dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:gravity="center"
+            android:text="נחמד, נהנה" />
 
         <TextView
             android:id="@+id/word3"
             android:layout_width="match_parent"
-            android:layout_height="123dp"
-            android:text="חופש"
+            android:layout_height="118dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:gravity="center"
+            android:text="חופש" />
 
         <TextView
             android:id="@+id/word4"
             android:layout_width="match_parent"
-            android:layout_height="109dp"
-            android:text="סליחה"
+            android:layout_height="140dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:gravity="center"
+            android:text="סליחה" />
 
     </LinearLayout>
 
@@ -63,42 +67,42 @@
         <ImageView
             android:id="@+id/video1"
             android:layout_width="wrap_content"
-            android:layout_height="137dp"
-            android:src="@raw/please"
+            android:layout_height="130dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
+            android:contentDescription="Video"
             android:focusable="true"
-            android:contentDescription="Video"/>
+            android:src="@raw/please" />
 
         <ImageView
             android:id="@+id/video2"
             android:layout_width="wrap_content"
-            android:layout_height="144dp"
-            android:src="@raw/nice"
+            android:layout_height="139dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
+            android:contentDescription="Video"
             android:focusable="true"
-            android:contentDescription="Video"/>
+            android:src="@raw/nice" />
 
         <ImageView
             android:id="@+id/video3"
             android:layout_width="wrap_content"
-            android:layout_height="126dp"
-            android:src="@raw/va"
+            android:layout_height="121dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
+            android:contentDescription="Video"
             android:focusable="true"
-            android:contentDescription="Video"/>
+            android:src="@raw/va" />
 
         <ImageView
             android:id="@+id/video4"
             android:layout_width="wrap_content"
-            android:layout_height="114dp"
-            android:src="@raw/sorry"
+            android:layout_height="144dp"
             android:background="@drawable/selector_frame"
             android:clickable="true"
+            android:contentDescription="Video"
             android:focusable="true"
-            android:contentDescription="Video"/>
+            android:src="@raw/sorry" />
 
 
         <!-- Add more VideoView elements as needed -->

@@ -55,7 +55,7 @@ public class WriteTheSentenceInHebrew extends AppCompatActivity implements View.
             }
         }
         if(view==buttonBack){
-            Intent i = new Intent(this, HebrewLevels.class);
+            Intent i = new Intent(this, learnTheWord1.class);
             startActivity(i);
         }
     }

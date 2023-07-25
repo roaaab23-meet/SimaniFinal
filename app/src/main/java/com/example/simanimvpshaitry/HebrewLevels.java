@@ -27,7 +27,7 @@ public class HebrewLevels extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view==circleButton1){
-            Intent i=new Intent(this,WriteTheSentenceInHebrew.class);
+            Intent i=new Intent(this,learnTheWord.class);
             startActivity(i);
         }
     }
