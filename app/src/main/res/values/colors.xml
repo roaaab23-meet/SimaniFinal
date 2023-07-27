@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cyan_color">#00FFFF</color>
     <color name="borderColor">#FFBB86FC</color>
+    <color name="bg__course_search_page_color">#E8F6EF</color>
 </resources>
