@@ -23,7 +23,7 @@ public class hebrew_homepage extends AppCompatActivity {
 //                "\n Second Value: "+value2, Toast.LENGTH_LONG).show();
     }
     public void startthis(View view){
-        Intent i = new Intent(getApplicationContext(), ChooseTheRightWord.class);
+        Intent i = new Intent(getApplicationContext(), learnTheWord.class);
         startActivity(i);
     }
 

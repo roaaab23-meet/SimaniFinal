@@ -46,7 +46,7 @@ public class learnTheWord extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view==backbutton){
-            Intent i = new Intent(this, HebrewLevels.class);
+            Intent i = new Intent(this, hebrew_homepage.class);
             startActivity(i);
         }
         if(view==nextPage){
