@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35"
-        app:srcCompat="@drawable/square1"
+        app:srcCompat="@drawable/emergency"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.349"
-        app:srcCompat="@drawable/square2" />
+        app:srcCompat="@drawable/square1" />
 
     <ImageView
         android:id="@+id/square3"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.849"
-        app:srcCompat="@drawable/square5"
+        app:srcCompat="@drawable/square2"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
