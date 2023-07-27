@@ -20,13 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:gravity="center"
-        android:text="בבקשה" />
+        android:text="קיא" />
 
     <ImageView
         android:id="@+id/pleaseGif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@raw/please" />
+        android:src="@raw/vomit" />
 
     <Button
         android:id="@+id/nextPage"

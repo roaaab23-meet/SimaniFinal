@@ -46,7 +46,7 @@ public class ChooseTheRightWord extends AppCompatActivity implements View.OnClic
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.you);
+            gifDrawable = new GifDrawable(getResources(), R.raw.headache);
             gif.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {

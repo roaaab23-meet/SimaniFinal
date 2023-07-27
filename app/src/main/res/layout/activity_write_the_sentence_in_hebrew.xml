@@ -25,7 +25,7 @@
         android:id="@+id/whatsyournameGif"
         android:layout_width="wrap_content"
         android:layout_height="335dp"
-        android:src="@raw/hello"/>
+        android:src="@raw/where"/>
 
     <EditText
         android:id="@+id/answerUser"

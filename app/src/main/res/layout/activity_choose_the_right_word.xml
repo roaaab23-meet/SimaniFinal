@@ -21,46 +21,44 @@
         android:layout_height="30dp"
         android:text="בחר/ בחרי את הפירוש הנכון של המילה המופיע" />
 
+
     <ImageView
         android:id="@+id/schoolgif"
         android:layout_width="match_parent"
-        android:layout_height="199dp"
-        android:src="@raw/you" />
-
+        android:layout_height="175dp"
+        android:src="@raw/headache" />
 
     <Button
         android:id="@+id/option1"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="7dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="בית ספר" />
+        android:text="יש לי כאב בטן" />
 
     <Button
         android:id="@+id/option2"
         android:layout_width="match_parent"
-        android:layout_height="106dp"
+        android:layout_height="55dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="מטבח" />
+        android:text="כואב לי היד" />
 
     <Button
         android:id="@+id/option3"
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="9dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="אתה" />
+        android:text="כואב לי הרגל" />
 
     <Button
         android:id="@+id/option4"
         android:layout_width="match_parent"
-        android:layout_height="105dp"
+        android:layout_height="12dp"
         android:layout_weight="1"
         android:minHeight="100dp"
-        android:text="תודה" />
-
-
+        android:text="יש לי כאב ראש" />
 
 
 </LinearLayout>

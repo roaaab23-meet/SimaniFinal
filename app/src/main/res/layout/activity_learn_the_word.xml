@@ -20,13 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:gravity="center"
-        android:text="שלום" />
+        android:text="דם" />
 
     <ImageView
         android:id="@+id/helloGif"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@raw/hello" />
+        android:layout_height="473dp"
+        android:src="@raw/blood" />
 
     <Button
         android:id="@+id/nextPage"

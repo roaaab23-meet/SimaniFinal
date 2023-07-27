@@ -149,7 +149,7 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.please);
+            gifDrawable = new GifDrawable(getResources(), R.raw.blood);
             video1.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
@@ -160,7 +160,7 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.va);
+            gifDrawable = new GifDrawable(getResources(), R.raw.air);
             video2.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
@@ -171,7 +171,7 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.nice);
+            gifDrawable = new GifDrawable(getResources(), R.raw.pain);
             video3.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
@@ -182,7 +182,7 @@ public class ConnectTheWordsCourse extends AppCompatActivity implements View.OnC
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.sorry);
+            gifDrawable = new GifDrawable(getResources(), R.raw.vomit);
             video4.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {

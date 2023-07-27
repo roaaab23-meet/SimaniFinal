@@ -20,13 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:gravity="center"
-        android:text="תודה" />
+        android:text="כאב" />
 
     <ImageView
         android:id="@+id/thankYouGif"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@raw/you" />
+        android:layout_height="474dp"
+        android:src="@raw/pain" />
 
     <Button
         android:id="@+id/nextPage"

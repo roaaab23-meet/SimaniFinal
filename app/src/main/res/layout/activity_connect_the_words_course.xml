@@ -23,7 +23,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="בבקשה" />
+            android:text="דם" />
 
         <TextView
             android:id="@+id/word2"
@@ -33,7 +33,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="נחמד, נהנה" />
+            android:text="אוויר" />
 
         <TextView
             android:id="@+id/word3"
@@ -43,7 +43,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="חופש" />
+            android:text="כאב" />
 
         <TextView
             android:id="@+id/word4"
@@ -53,7 +53,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="סליחה" />
+            android:text="קיא" />
 
     </LinearLayout>
 
@@ -72,7 +72,7 @@
             android:clickable="true"
             android:contentDescription="Video"
             android:focusable="true"
-            android:src="@raw/please" />
+            android:src="@raw/blood" />
 
         <ImageView
             android:id="@+id/video2"
@@ -82,7 +82,7 @@
             android:clickable="true"
             android:contentDescription="Video"
             android:focusable="true"
-            android:src="@raw/nice" />
+            android:src="@raw/air" />
 
         <ImageView
             android:id="@+id/video3"
@@ -92,7 +92,7 @@
             android:clickable="true"
             android:contentDescription="Video"
             android:focusable="true"
-            android:src="@raw/va" />
+            android:src="@raw/pain" />
 
         <ImageView
             android:id="@+id/video4"
@@ -102,7 +102,7 @@
             android:clickable="true"
             android:contentDescription="Video"
             android:focusable="true"
-            android:src="@raw/sorry" />
+            android:src="@raw/vomit" />
 
 
         <!-- Add more VideoView elements as needed -->

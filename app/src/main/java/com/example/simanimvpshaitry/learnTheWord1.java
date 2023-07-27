@@ -32,7 +32,7 @@ public class learnTheWord1 extends AppCompatActivity implements View.OnClickList
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.you);
+            gifDrawable = new GifDrawable(getResources(), R.raw.pain);
             thankYouGif.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {

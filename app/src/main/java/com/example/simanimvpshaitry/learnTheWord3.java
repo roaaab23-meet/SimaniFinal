@@ -32,7 +32,7 @@ public class learnTheWord3 extends AppCompatActivity implements View.OnClickList
         //making the gif move.
         GifDrawable gifDrawable;
         try {
-            gifDrawable = new GifDrawable(getResources(), R.raw.nice);
+            gifDrawable = new GifDrawable(getResources(), R.raw.air);
             niceGif.setImageDrawable(gifDrawable);
             gifDrawable.start();
         } catch (IOException e) {
@@ -47,7 +47,7 @@ public class learnTheWord3 extends AppCompatActivity implements View.OnClickList
             startActivity(i);
         }
         if(view==nextPage){
-            Intent i = new Intent(this, learnTheWord4.class);
+            Intent i = new Intent(this, ConnectTheWordsCourse.class);
             startActivity(i);
         }
     }
