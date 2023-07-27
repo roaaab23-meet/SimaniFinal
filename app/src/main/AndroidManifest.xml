@@ -36,20 +36,26 @@
             android:name=".hebrew_homepage"
             android:exported="false" />
         <activity
+            android:name=".heb_home_activity"
+            android:exported="true" />
+        <activity
+            android:name=".heb_courses_activity"
+            android:exported="true" />
+        <activity
             android:name=".FinishedLevel"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ConnectTheWordsCourse"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ChooseTheRightWord"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".WriteTheSentenceInHebrew"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".HebrewLevels"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >
