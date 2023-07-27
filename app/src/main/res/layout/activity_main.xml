@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <View
-            android:id="@+id/community"
+            android:id="@+id/logo"
             android:layout_width="110dp"
             android:layout_height="106dp"
             android:layout_marginStart="150dp"
@@ -51,7 +51,8 @@
             android:layout_marginEnd="60dp"
             android:layout_marginBottom="222dp"
             android:contentDescription="icon_character"
-            android:src="@drawable/hebrew"
+            android:src="@drawable/arabic"
+            android:onClick="callSecondActivitytwo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +67,7 @@
             android:layout_marginEnd="60dp"
             android:layout_marginBottom="304dp"
             android:contentDescription="icon_character"
-            android:src="@drawable/arabic"
+            android:src="@drawable/hebrew"
             android:onClick="callSecondActivity"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
