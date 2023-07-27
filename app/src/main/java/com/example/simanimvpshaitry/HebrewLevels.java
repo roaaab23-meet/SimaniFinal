@@ -13,7 +13,9 @@ public class HebrewLevels extends AppCompatActivity implements View.OnClickListe
     private TextView hello;
     private Button circleButton1;
     private Button circleButton2;
-    @SuppressLint("WrongViewCast")
+
+    private Button buttont;
+    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,8 @@ public class HebrewLevels extends AppCompatActivity implements View.OnClickListe
         circleButton1=findViewById(R.id.circleButton1);
         circleButton2=findViewById(R.id.circleButton2);
         circleButton1.setOnClickListener(this);
+        buttont=findViewById(R.id.buttont);
+        buttont.setOnClickListener(this);
     }
 
     @Override
@@ -30,5 +34,15 @@ public class HebrewLevels extends AppCompatActivity implements View.OnClickListe
             Intent i=new Intent(this,learnTheWord.class);
             startActivity(i);
         }
+    }
+
+    public void movepage(View view){
+        Intent i = new Intent(this, heb_courses_activity.class);
+
+//        i.putExtra("Value1", "Android By Javatpoint");
+//        i.putExtra("Value2", "Simple Tutorial");
+//        // Set the request code to any code you like, you can identify the
+//        // callback via this code
+        startActivity(i);
     }
 }
