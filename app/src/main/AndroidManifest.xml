@@ -12,6 +12,9 @@
         android:theme="@style/Theme.SimaniMvpShaiTry"
         tools:targetApi="31">
         <activity
+            android:name=".alphbetISL"
+            android:exported="false" />
+        <activity
             android:name=".learnTheWordtwo"
             android:exported="false" />
         <activity

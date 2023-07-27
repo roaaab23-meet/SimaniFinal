@@ -33,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/korseem" />
+        app:srcCompat="@drawable/korseem"
+        android:contentDescription="Description of the image"/>
 
     <ImageView
         android:id="@+id/mlon"

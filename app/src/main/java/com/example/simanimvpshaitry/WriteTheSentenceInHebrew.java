@@ -46,7 +46,7 @@ public class WriteTheSentenceInHebrew extends AppCompatActivity implements View.
     public void onClick(View view) {
         if(view==submitAnswerButton){
             String enteredAnswer = answer.getText().toString();
-            if(!enteredAnswer.equals("איפה כואב לך?")&&!enteredAnswer.equals("איפה כואב לך?")&&!enteredAnswer.equals("שלום ")){
+            if(!enteredAnswer.equals("איפה כואב לך?")&&!enteredAnswer.equals("איפה כואב לך")&&!enteredAnswer.equals("איפה כואב לך ")){
                 answer.setText("");
             }
             else {

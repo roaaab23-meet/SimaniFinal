@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
-
+a
 
     <!-- Left side with EditText fields -->
 
@@ -35,7 +35,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="אוויר" />
+            android:text="כאב" />
 
         <TextView
             android:id="@+id/word3"
@@ -45,7 +45,7 @@
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="כאב" />
+            android:text="אוויר" />
 
         <TextView
             android:id="@+id/word4"
