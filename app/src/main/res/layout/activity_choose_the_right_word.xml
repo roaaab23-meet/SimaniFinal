@@ -60,11 +60,6 @@
         android:minHeight="100dp"
         android:text="תודה" />
 
-    <Button
-        android:id="@+id/submitAnswerButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="הגש" />
 
 
 
