@@ -46,7 +46,7 @@ public class heb_courses_activity extends AppCompatActivity {
 //        menu= findViewById(R.id.menu);
     }
         public void on_square1(View view){
-            Intent i = new Intent(getApplicationContext(), ChooseTheRightWord.class);
+            Intent i = new Intent(getApplicationContext(), hebrew_homepage.class);
 //        i.putExtra("Value1", "Android By Javatpoint");
 //        i.putExtra("Value2", "Simple Tutorial");
 //        // Set the request code to any code you like, you can identify the

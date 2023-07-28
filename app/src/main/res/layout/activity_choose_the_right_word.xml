@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChooseTheRightWord"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/arabichomepagebg">
 
 
     <ImageButton
@@ -18,47 +19,57 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="בחר/ בחרי את הפירוש הנכון של המילה המופיע" />
+        android:layout_height="104dp"
+        android:text="בחר/ בחרי את הפירוש הנכון של המילה המופיע"
+        android:textAlignment="center"
+        android:textSize="20dp" />
 
 
     <ImageView
         android:id="@+id/schoolgif"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="245dp"
         android:src="@raw/headache" />
 
-    <Button
+    <ImageButton
         android:id="@+id/option1"
         android:layout_width="match_parent"
-        android:layout_height="7dp"
+        android:layout_height="2dp"
         android:layout_weight="1"
+        android:background="@drawable/option1"
         android:minHeight="100dp"
-        android:text="יש לי כאב בטן" />
+        android:text="יש לי כאב בטן"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <ImageButton
         android:id="@+id/option2"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="2dp"
         android:layout_weight="1"
+        android:background="@drawable/option2"
         android:minHeight="100dp"
-        android:text="כואב לי היד" />
+        android:text="כואב לי היד"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <ImageButton
         android:id="@+id/option3"
         android:layout_width="match_parent"
-        android:layout_height="9dp"
+        android:layout_height="2dp"
         android:layout_weight="1"
+        android:background="@drawable/option3"
         android:minHeight="100dp"
-        android:text="כואב לי הרגל" />
+        android:text="כואב לי הרגל"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <Button
+    <ImageButton
         android:id="@+id/option4"
         android:layout_width="match_parent"
-        android:layout_height="12dp"
+        android:layout_height="2dp"
         android:layout_weight="1"
+        android:background="@drawable/option4"
         android:minHeight="100dp"
-        android:text="יש לי כאב ראש" />
+        android:text="יש לי כאב ראש"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 
