@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".WriteTheSentenceInHebrew"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/arabichomepagebg">
 
     <ImageButton
         android:id="@+id/backbutton"

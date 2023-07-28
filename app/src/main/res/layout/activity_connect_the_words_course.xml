@@ -5,8 +5,9 @@
     tools:context=".ConnectTheWordsCourse"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-a
+    android:orientation="horizontal"
+    android:background="@drawable/arabichomepagebg">
+
 
     <!-- Left side with EditText fields -->
 
@@ -25,6 +26,7 @@ a
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
+            android:textSize="20dp"
             android:text="דם" />
 
         <TextView
@@ -35,7 +37,8 @@ a
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="כאב" />
+            android:textSize="20dp"
+            android:text="אוויר" />
 
         <TextView
             android:id="@+id/word3"
@@ -45,7 +48,8 @@ a
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
-            android:text="אוויר" />
+            android:textSize="20dp"
+            android:text="כאב" />
 
         <TextView
             android:id="@+id/word4"
@@ -55,6 +59,7 @@ a
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
+            android:textSize="20dp"
             android:text="קיא" />
 
     </LinearLayout>

@@ -6,34 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".WriteTheSentenceInHebrew"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/arabichomepagebg">
+
 
     <ImageButton
         android:id="@+id/backbutton"
-        android:layout_width="48dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Go To HebrewLevels"
         app:srcCompat="@drawable/backbutton" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
+    <ImageButton
+        android:id="@+id/word1"
+        android:layout_width="125dp"
+        android:layout_height="53dp"
+        android:background="@drawable/blood"
         android:gravity="center"
-        android:text="דם" />
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
     <ImageView
         android:id="@+id/helloGif"
-        android:layout_width="wrap_content"
-        android:layout_height="473dp"
+        android:layout_width="343dp"
+        android:layout_height="382dp"
         android:src="@raw/blood" />
 
-    <Button
+    <ImageButton
         android:id="@+id/nextPage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="לעמוד הבא"
-        android:background="@drawable/buttondesign1"/>
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:background="@drawable/greenbutton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 
 </LinearLayout>
